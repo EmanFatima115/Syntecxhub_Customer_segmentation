@@ -1,45 +1,46 @@
-# House Price Prediction
+# Customer Segmentation
 
-A simple Machine Learning project that predicts house prices based on house features.
+This project performs customer segmentation using **K-Means Clustering** on the Mall Customers dataset.
 
-## Project Description
+## Project Overview
 
-This project uses Linear Regression to predict house prices using:
+The goal is to divide customers into different groups based on their:
 
-- Area
-- Bedrooms
-- Bathrooms
+* Age
+* Annual Income
+* Spending Score
 
-## Technologies Used
+## Method Used
 
-- Python
-- Pandas
-- Scikit-learn
-- Matplotlib
+* Data cleaning and basic checks
+* Feature selection
+* Feature scaling using StandardScaler
+* Elbow Method to select the number of clusters
+* K-Means Clustering
+* Cluster visualization
+* Cluster profiling
+* Marketing recommendations
 
-## Machine Learning Process
+The Elbow Method was used to select **K = 6** clusters.
 
-1. Load the dataset
-2. Explore the data
-3. Select features and target
-4. Split data into training and testing sets
-5. Train Linear Regression model
-6. Predict house prices
-7. Compare actual and predicted prices
+## Files
 
-## Dataset
+* `main.py` — Machine learning code
+* `Mall_Customers.csv` — Dataset
+* `customer_segments.csv` — Dataset with cluster labels
+* `segment_report.txt` — Short report of each customer segment
 
-The dataset is stored in `houses.csv`.
+## Technologies
 
-## Model
+* Python
+* Pandas
+* Matplotlib
+* Scikit-learn
 
-The project uses **Linear Regression** from Scikit-learn.
+## Result
 
-## Project Files
-
-- `main.py` — Main Python code
-- `houses.csv` — House price dataset
-
-## Author
-
+The model divided customers into **6 segments** with different age, income, and spending patterns. These segments can be used to create targeted marketing strategies.
+Author
 Eman Fatima
+
+
